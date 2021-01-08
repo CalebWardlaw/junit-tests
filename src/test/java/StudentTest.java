@@ -4,8 +4,10 @@ import java.util.ArrayList;
 
 import static org.junit.Assert.*;
 
+//Write these first
+
 public class StudentTest {
-    @Test
+    @Test//1L used for long
     public void testCreateStudent(){
         Student fer = new Student(1L, "fer");
         Student ryan = null;
@@ -13,7 +15,7 @@ public class StudentTest {
         assertNotNull(fer);
     }
 
-    @Test
+    @Test//1L is used to denote long
     public void testStudentFields(){
         Student fer = new Student(1L, "fer");
         assertSame(1L, fer.getId());
